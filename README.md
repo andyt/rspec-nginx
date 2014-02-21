@@ -2,6 +2,7 @@
 
 Use TDD to build your NginX config files feature by feature, or write regression tests to help you refactor your config-monsters.
 
+
 ## Installation
 
 You'll need Ruby and bundler.
@@ -18,9 +19,17 @@ Or install it yourself as:
 
     $ gem install rspec-nginx
 
+
 ## Usage
 
-TODO.
+    require 'rspec/nginx'
+
+    describe 'simple-vhost-with-www-redirect' do
+      describe 'nginx.conf', :type => :nginx_config do
+        it { should have_valid_syntax }
+      end
+    end
+
 
 ## Contributing
 
