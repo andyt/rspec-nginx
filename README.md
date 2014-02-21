@@ -1,10 +1,12 @@
 # Rspec::Nginx
 
-TODO: Write a gem description
+Use TDD to build your NginX config files feature by feature, or write regression tests to help you refactor your config-monsters.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+You'll need Ruby and bundler.
+
+Add this line to a Gemfile in your project folder:
 
     gem 'rspec-nginx'
 
@@ -18,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO.
 
 ## Contributing
 
