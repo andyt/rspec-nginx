@@ -8,6 +8,7 @@ end
 
 module RSpec
   module Nginx
+
     def self.root
       File.expand_path '../../..', __FILE__
     end
@@ -19,6 +20,10 @@ module RSpec
 end
 
 require 'rspec/nginx/example'
+require 'rspec/nginx/installers'
 require 'rspec/nginx/config'
 require 'rspec/nginx/binary'
 
+if defined?(Rake)
+  load 'rspec/nginx/tasks/rspec.rake'
+end
