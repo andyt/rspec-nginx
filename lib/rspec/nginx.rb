@@ -23,6 +23,7 @@ require 'rspec/nginx/example'
 require 'rspec/nginx/installers'
 require 'rspec/nginx/config'
 require 'rspec/nginx/binary'
+require 'rspec/nginx/instance'
 
 if defined?(Rake)
   load 'rspec/nginx/tasks/rspec.rake'
