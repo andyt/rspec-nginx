@@ -10,7 +10,7 @@ module RSpec::Nginx
 
     def start
       @pid = fork do
-        exec("%s -c %s -p %s -g 'pid nginx.pid;'" % [binary_path, config_path, prefix])
+        exec("%s -c %s -p %s" % [binary_path, config_path, prefix])
       end
       teardown
     end
